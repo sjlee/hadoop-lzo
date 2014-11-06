@@ -23,6 +23,9 @@ import java.util.EnumMap;
 import java.util.EnumSet;
 import java.util.zip.Checksum;
 
+import org.apache.hadoop.io.compress.DoNotPool;
+
+@DoNotPool
 public class LzopDecompressor extends LzoDecompressor {
 
   private final EnumMap<DChecksum,Checksum> chkDMap = new EnumMap<DChecksum,Checksum>(DChecksum.class);

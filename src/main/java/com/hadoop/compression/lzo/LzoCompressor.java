@@ -26,12 +26,14 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.io.compress.Compressor;
+import org.apache.hadoop.io.compress.DoNotPool;
 
 /**
  * A {@link Compressor} based on the lzo algorithm.
  * http://www.oberhumer.com/opensource/lzo/
  * 
  */
+@DoNotPool
 class LzoCompressor implements Compressor {
   private static final Log LOG = 
     LogFactory.getLog(LzoCompressor.class.getName());

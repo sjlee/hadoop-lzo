@@ -1,11 +1,12 @@
 package com.hadoop.compression.lzo;
 
 import junit.framework.TestCase;
-import org.apache.hadoop.util.ReflectionUtils;
+
+import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.io.compress.CodecPool;
 import org.apache.hadoop.io.compress.CompressionCodec;
 import org.apache.hadoop.io.compress.Compressor;
-import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.util.ReflectionUtils;
 
 public class TestLzoCodec extends TestCase {
 

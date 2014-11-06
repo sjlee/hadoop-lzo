@@ -417,6 +417,9 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.14.1</version>
         <configuration>
+          <excludes>
+            <exclude>**/TestLzoCodec.java</exclude>
+          </excludes>
           <reuseForks>false</reuseForks>
           <argLine>-Djava.library.path=${build.native.target}/lib</argLine>
             <systemPropertyVariables>
